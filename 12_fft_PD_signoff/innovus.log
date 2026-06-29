@@ -1,0 +1,1807 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	
+Date:		Tue Apr 28 16:59:34 2026
+Host:		vlsilab03.nitrr.ac.in (x86_64 w/Linux 4.18.0-425.3.1.el8.x86_64) (4cores*4cpus*Intel(R) Xeon(R) CPU E5-1607 v3 @ 3.10GHz 10240KB)
+OS:		Red Hat Enterprise Linux release 8.7 (Ootpa)
+
+License:
+		[16:59:34.275937] Configured Lic search path (21.01-s002): 5280@14.139.1.126
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (55 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> is_common_ui_mode
+<CMD> restoreDesign /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat fft_8_top
+#% Begin load design ... (date=04/28 17:00:52, mem=1022.1M)
+Set Default Input Pin Transition as 0.1 ps.
+Loading design 'fft_8_top' saved by 'Innovus' '21.15-s110_1' on 'Tue Apr 28 16:05:10 2026'.
+% Begin Load MMMC data ... (date=04/28 17:00:53, mem=1024.4M)
+% End Load MMMC data ... (date=04/28 17:00:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1025.2M, current mem=1025.2M)
+rc_best rc_worst
+
+Loading LEF file /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/libs/lef/scl18fs120_tech.lef ...
+
+Loading LEF file /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/libs/lef/scl18fs120_std.lef ...
+Set DBUPerIGU to M2 pitch 560.
+
+Loading LEF file /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/libs/lef/tsl18cio150_6lm.lef ...
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'apc3d01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b01u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b02u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03ed' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b03u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b04u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05d' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b05u' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b21eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3b25eu' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (IMPLF-200):	Pin 'PAD' in macro 'pc3d00' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-200' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-200) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+Loading view definition file from /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/viewDefinition.tcl
+Reading max_timing timing library '/opt/sclpdkv3/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib' ...
+Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /opt/sclpdkv3/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib, Line 104953)
+Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /opt/sclpdkv3/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib, Line 157476)
+Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /opt/sclpdkv3/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib, Line 288762)
+Read 534 cells in library 'tsl18fs120_scl_ss' 
+Reading max_timing timing library '/opt/sclpdkv3/scl180/iopad/cio150/6M1L/liberty/tsl18cio150_max.lib' ...
+Read 93 cells in library 'tsl18cio150_max' 
+Reading min_timing timing library '/opt/sclpdkv3/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib' ...
+Both ff/latch and statetable are present in cell 'lanht4'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /opt/sclpdkv3/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 104965)
+Both ff/latch and statetable are present in cell 'lanht2'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /opt/sclpdkv3/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 157496)
+Both ff/latch and statetable are present in cell 'lanht1'. Only ff/latch will be used to model sequential cell behavior and statetable will be ignored (File /opt/sclpdkv3/scl180/stdcell/fs120/6M1L/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib, Line 288805)
+Read 534 cells in library 'tsl18fs120_scl_ff' 
+Reading min_timing timing library '/opt/sclpdkv3/scl180/iopad/cio150/6M1L/liberty/tsl18cio150_min.lib' ...
+Read 93 cells in library 'tsl18cio150_min' 
+Starting consistency checks on late and early library sets of delay corner 'max_delay'
+late library set: max_timing
+early library set: min_timing
+Completed consistency checks. Status: Successful
+**WARN: (TECHLIB-604):	Operating condition library 'tsl18fs120_scl_ff' not found in library set 'max_timing'. Operating condition library must be part of library set. Check the library provided is internal library name and not the file name. Ignoring operating condition 'op_cond_worst'.
+Starting consistency checks on late and early library sets of delay corner 'min_delay'
+late library set: max_timing
+early library set: min_timing
+Completed consistency checks. Status: Successful
+**WARN: (TECHLIB-604):	Operating condition library 'tsl18fs120_scl_ff' not found in library set 'max_timing'. Operating condition library must be part of library set. Check the library provided is internal library name and not the file name. Ignoring operating condition 'op_cond_worst'.
+*** End library_loading (cpu=0.02min, real=0.02min, mem=35.9M, fe_cpu=0.48min, fe_real=1.33min, fe_mem=1126.5M) ***
+% Begin Load netlist data ... (date=04/28 17:00:54, mem=1050.0M)
+*** Begin netlist parsing (mem=1126.5M) ***
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'or04d2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'or04d2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'an02d1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'an02d1' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'nd02da' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'nd02da' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'dl03d2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'dl03d2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'invtd7' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'invtd7' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'slnht2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'slnht2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'aoim22d2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'mffnrb2' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VDD' of cell 'nr03d7' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (IMPVL-159):	Pin 'VSS' of cell 'nr03d7' is defined in LEF but not in the timing library.
+Type 'man IMPVL-159' for more detail.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Pin 'VDD' of cell 'pvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VDDC' of cell 'pvdc' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VDDO' of cell 'pvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSS' of cell 'pv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSS' of cell 'pv0f' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSSC' of cell 'pv0c' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'VSSO' of cell 'pv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVDD' of cell 'apvdi' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVDDO' of cell 'apvda' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVSS' of cell 'apv0i' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Pin 'AVSSO' of cell 'apv0a' is declared as power/ground in LEF but as signal in timing library.  Treat it as power/ground.
+Created 627 new cells from 4 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/fft_8_top.v.bin'
+
+*** Memory Usage v#1 (Current mem = 1132.480M, initial mem = 483.883M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1132.5M) ***
+% End Load netlist data ... (date=04/28 17:00:54, total cpu=0:00:00.1, real=0:00:00.0, peak res=1070.6M, current mem=1070.6M)
+Set top cell to fft_8_top.
+Starting consistency checks on late and early library sets of delay corner 'max_delay'
+late library set: max_timing
+early library set: min_timing
+Completed consistency checks. Status: Successful
+Starting consistency checks on late and early library sets of delay corner 'min_delay'
+late library set: max_timing
+early library set: min_timing
+Completed consistency checks. Status: Successful
+Hooked 1254 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell fft_8_top ...
+*** Netlist is unique.
+** info: there are 1289 modules.
+** info: there are 11159 stdCell insts.
+** info: there are 57 Pad insts.
+
+*** Memory Usage v#1 (Current mem = 1187.395M, initial mem = 483.883M) ***
+*info: set bottom ioPad orient R0
+Reading IO assignment file "/home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/libs/iofile/fft.io" ...
+Adjusting Core to Left to: 125.2000. Core to Bottom to: 125.2000.
+**WARN: (IMPFP-3961):	The techSite 'CO_MSTR_c' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite_c' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Generated pitch 0.56 in M5 is different from 0.66 defined in technology file in preferred direction.
+Pre-connect netlist-defined P/G connections...
+  Updated 20 instances.
+Loading preference file /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/gui.pref.tcl ...
+**WARN: (IMPOPT-3602):	The specified path group name reg2reg is not defined.
+Type 'man IMPOPT-3602' for more detail.
+Effort level <high> specified for reg2reg path_group
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+#WARNING (NRIF-90) Option setNanoRouteMode -routeBottomRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -bottomRoutingLayer instead.
+#WARNING (NRIF-91) Option setNanoRouteMode -routeTopRoutingLayer is obsolete. It will continue to work for the current release. To ensure compatibility with future releases, use option setDesignMode -topRoutingLayer instead.
+AAE_INFO: switching -siAware from false to true ...
+AAE_INFO: The setting is changed from false to true in setDelayCalMode -SIAware
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+addStripe will allow jog to connect padcore ring and block ring.
+
+Stripes will not extend to closest target.
+When breaking rings, the power planner will consider the existence of blocks.
+addStripe will break automatically at non-default domains when generating global stripes over the core area or default domain.
+The entire stripe set will break at the domain if one of the nets is not in the domain.
+Stripes will not be created over regions without power planning wires.
+Offset for stripe breaking is set to 0.
+Stripes will stop at the boundary of the specified area.
+The power planner will set stripe antenna targets to none (no trimming allowed).
+**WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMaxRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -topRoutingLayer' instead.
+**WARN: (IMPPSP-1003):	Found use of 'setRouteMode -earlyGlobalMinRouteLayer'. This will continue to work in this release; however, it is recommended to use 'setDesignMode -bottomRoutingLayer' instead.
+Change floorplan default-technical-site to 'CoreSite'.
+*Info: initialize multi-corner CTS.
+**WARN: (TECHLIB-604):	Operating condition library 'tsl18fs120_scl_ff' not found in library set 'max_timing'. Operating condition library must be part of library set. Check the library provided is internal library name and not the file name. Ignoring operating condition 'op_cond_worst'.
+**WARN: (TECHLIB-604):	Operating condition library 'tsl18fs120_scl_ff' not found in library set 'max_timing'. Operating condition library must be part of library set. Check the library provided is internal library name and not the file name. Ignoring operating condition 'op_cond_worst'.
+Total number of combinational cells: 321
+Total number of sequential cells: 203
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: bufbd7 buffd2 bufbdf buffda buffd3 bufbda buffd4 bufbd4 bufbd1 bufbd3 buffd7 buffd1 bufbd2
+Total number of usable buffers: 13
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: inv0d2 inv0da invbda invbdk inv0d1 inv0d7 invbd4 inv0d0 invbd2 inv0d4 invbd7 invbdf
+Total number of usable inverters: 12
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: dl04d1 dl03d1 dl02d2 dl03d4 dl04d2 dl02d1 dl01d4 bufbdk dl04d4 dl02d4 dl01d2 dl01d1 dl03d2
+Total number of identified usable delay cells: 13
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+% Begin Load MMMC data post ... (date=04/28 17:00:55, mem=1364.0M)
+% End Load MMMC data post ... (date=04/28 17:00:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1364.0M, current mem=1364.0M)
+Reading floorplan file - /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/fft_8_top.fp.gz (mem = 1433.8M).
+% Begin Load floorplan data ... (date=04/28 17:00:55, mem=1364.0M)
+*info: reset 13511 existing net BottomPreferredLayer and AvoidDetour
+Pre-connect netlist-defined P/G connections...
+  Updated 20 instances.
+Deleting old partition specification.
+Set FPlanBox to (0 0 1939840 1939840)
+**WARN: (IMPFP-3961):	The techSite 'CO_MSTR_c' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+**WARN: (IMPFP-3961):	The techSite 'IOSite_c' has no related standard cells in the LEF/OA library. The calculations for this site type cannot be made unless standard cell models of this type exist in the LEF/OA library. Ignore this warning if the SITE is not used by the library. Alternatively, remove the SITE definition for the LEF/OA library to avoid this message.
+Type 'man IMPFP-3961' for more detail.
+Start create_tracks
+Generated pitch 0.56 in M5 is different from 0.66 defined in technology file in preferred direction.
+ ... processed partition successfully.
+Reading binary special route file /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/fft_8_top.fp.spr.gz (Created by Innovus v21.15-s110_1 on Tue Apr 28 16:05:08 2026, version: 1)
+Ending "Read special route file" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1365.3M, current mem=1365.3M)
+There are 365 io inst loaded
+There are 20 nets with weight being set
+There are 20 nets with bottomPreferredRoutingLayer being set
+There are 20 nets with avoidDetour being set
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=04/28 17:00:56, total cpu=0:00:00.1, real=0:00:01.0, peak res=1367.5M, current mem=1367.5M)
+Reading congestion map file /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/fft_8_top.route.congmap.gz ...
+% Begin Load SymbolTable ... (date=04/28 17:00:56, mem=1367.8M)
+Un-suppress "**WARN ..." messages.
+% End Load SymbolTable ... (date=04/28 17:00:56, total cpu=0:00:00.1, real=0:00:00.0, peak res=1375.1M, current mem=1375.1M)
+Loading place ...
+% Begin Load placement data ... (date=04/28 17:00:56, mem=1375.1M)
+Reading placement file - /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/fft_8_top.place.gz.
+** Reading stdCellPlacement_binary (Created by Innovus v21.15-s110_1 on Tue Apr 28 16:05:09 2026, version# 2) ...
+Read Views for adaptive view pruning ...
+Read 0 views from Binary DB for adaptive view pruning
+*** Checked 6 GNC rules.
+*** applyConnectGlobalNets disabled.
+*** Completed restorePlace (cpu=0:00:00.1 real=0:00:00.0 mem=1455.3M) ***
+Total net length = 5.164e+05 (2.539e+05 2.625e+05) (ext = 0.000e+00)
+% End Load placement data ... (date=04/28 17:00:56, total cpu=0:00:00.1, real=0:00:00.0, peak res=1390.4M, current mem=1386.7M)
+Reading PG file /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/fft_8_top.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on       Tue Apr 28 16:05:08 2026)
+*** Completed restorePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=1452.3M) ***
+% Begin Load routing data ... (date=04/28 17:00:56, mem=1387.9M)
+Reading routing file - /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/fft_8_top.route.gz.
+Reading Innovus routing data (Created by Innovus v21.15-s110_1 on Tue Apr 28 16:05:09 2026 Format: 20.1) ...
+*** Total 13490 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.1 real=0:00:00.0 mem=1469.3M) ***
+% End Load routing data ... (date=04/28 17:00:56, total cpu=0:00:00.1, real=0:00:00.0, peak res=1405.4M, current mem=1404.6M)
+TAT_INFO: restoreCongMap REAL = 0 : CPU = 0 : MEM = 0.
+Reading property file /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/fft_8_top.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=1473.3M) ***
+Reading dirtyarea snapshot file /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/fft_8_top.db.da.gz (Create by Innovus v21.15-s110_1 on Tue Apr 28 16:05:09 2026, version: 4).
+Set Default Input Pin Transition as 0.1 ps.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 2 active RC Corners ...
+Reading Capacitance Table File /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/libs/mmmc/fft.CapTbl ...
+Process name: tsl18_scl_6M1L_typ.
+Reading Capacitance Table File /home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/libs/mmmc/fft.CapTbl ...
+Process name: tsl18_scl_6M1L_typ.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: worst_case
+    RC-Corner Name        : rc_worst
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 125 Celsius
+    RC-Corner Cap Table   : '/home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/libs/mmmc/fft.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+ 
+ Analysis View: best_case
+    RC-Corner Name        : rc_best
+    RC-Corner Index       : 1
+    RC-Corner Temperature : -40 Celsius
+    RC-Corner Cap Table   : '/home/vlsilab/Music/FFT/FFT/9_fft_route/routing/fft_8_top_routing_with_filler.enc.dat/libs/mmmc/fft.CapTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PostRoute Clock coupling capacitance Factor : 1 {1 1 1} 
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Start generating vias ..
+#Skip building auto via since it is not turned on.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Via generation completed.
+% Begin Load power constraints ... (date=04/28 17:00:58, mem=1420.3M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=04/28 17:00:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=1427.4M, current mem=1427.4M)
+max_delay min_delay
+% Begin load AAE data ... (date=04/28 17:00:58, mem=1474.3M)
+AAE DB initialization (MEM=1573.55 CPU=0:00:00.0 REAL=0:00:00.0) 
+% End load AAE data ... (date=04/28 17:00:58, total cpu=0:00:00.6, real=0:00:00.0, peak res=1483.1M, current mem=1483.1M)
+Restoring CCOpt config...
+  Extracting original clock gating for fft_clk...
+    clock_tree fft_clk contains 1631 sinks and 0 clock gates.
+  Extracting original clock gating for fft_clk done.
+  The skew group fft_clk/all was created. It contains 1631 sinks and 1 sources.
+  The skew group fft_clk/all was created. It contains 1631 sinks and 1 sources.
+**WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+**WARN: (IMPCCOPT-2332):	The property locked_originally is deprecated. It still works, but it may be removed in a future release.
+Restoring CCOpt config done.
+Total number of combinational cells: 321
+Total number of sequential cells: 203
+Total number of tristate cells: 10
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: bufbd7 buffd2 bufbdf buffda buffd3 bufbda buffd4 bufbd4 bufbd1 bufbd3 buffd7 buffd1 bufbd2
+Total number of usable buffers: 13
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: inv0d2 inv0da invbda invbdk inv0d1 inv0d7 invbd4 inv0d0 invbd2 inv0d4 invbd7 invbdf
+Total number of usable inverters: 12
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells: dl04d1 dl03d1 dl02d2 dl03d4 dl04d2 dl02d1 dl01d4 bufbdk dl04d4 dl02d4 dl01d2 dl01d1 dl03d2
+Total number of identified usable delay cells: 13
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+**WARN: (IMPCTE-107):	The following globals have been obsoleted since version . They will be removed in the next release. 
+timing_enable_separate_device_slew_effect_sensitivities
+#% End load design ... (date=04/28 17:00:59, total cpu=0:00:05.1, real=0:00:07.0, peak res=1505.2M, current mem=1489.1M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-200           49  Pin '%s' in macro '%s' has no ANTENNAGAT...
+WARNING   IMPFP-3961           4  The techSite '%s' has no related standar...
+WARNING   IMPVL-159         1436  Pin '%s' of cell '%s' is defined in LEF ...
+WARNING   IMPOPT-3602          1  The specified path group name %s is not ...
+WARNING   IMPCCOPT-2332        2  The property %s is deprecated. It still ...
+WARNING   IMPCTE-107           1  The following globals have been obsolete...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+WARNING   IMPPSP-1003          2  Found use of '%s'. This will continue to...
+WARNING   TECHLIB-604          4  Operating condition library '%s' not fou...
+*** Message Summary: 1500 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> setDrawView place
+<CMD> getMultiCpuUsage -localCpu
+<CMD> get_verify_drc_mode -disable_rules -quiet
+<CMD> get_verify_drc_mode -quiet -area
+<CMD> get_verify_drc_mode -quiet -layer_range
+<CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+<CMD> get_verify_drc_mode -check_only -quiet
+<CMD> get_verify_drc_mode -check_same_via_cell -quiet
+<CMD> get_verify_drc_mode -exclude_pg_net -quiet
+<CMD> get_verify_drc_mode -ignore_trial_route -quiet
+<CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+<CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+<CMD> get_verify_drc_mode -limit -quiet
+<CMD> set_verify_drc_mode -disable_rules {} -check_ndr_spacing auto -check_only default -check_same_via_cell true -exclude_pg_net false -ignore_trial_route false -ignore_cell_blockage false -use_min_spacing_on_block_obs auto -report fft_8_top.drc.rpt -limit 1000
+<CMD> verify_drc
+#-check_ndr_spacing auto                 # enums={true false auto}, default=auto,  user setting
+#-check_same_via_cell true               # bool, default=false, user setting
+#-report fft_8_top.drc.rpt               # string, default="", user setting
+ *** Starting Verify DRC (MEM: 1635.0) ***
+
+  VERIFY DRC ...... Starting Verification
+  VERIFY DRC ...... Initializing
+  VERIFY DRC ...... Deleting Existing Violations
+  VERIFY DRC ...... Creating Sub-Areas
+  VERIFY DRC ...... Using new threading
+
+  Verification Complete : 0 Viols.
+
+ *** End Verify DRC (CPU: 0:00:03.5  ELAPSED TIME: 3.00  MEM: 297.1M) ***
+
+<CMD> set_verify_drc_mode -area {0 0 0 0}
+<CMD> verifyProcessAntenna -report fft_8_top.antenna.rpt -error 1000
+
+******* START VERIFY ANTENNA ********
+Report File: fft_8_top.antenna.rpt
+LEF Macro File: fft_8_top.antenna.lef
+5000 nets processed: 0 violations
+10000 nets processed: 0 violations
+Verification Complete: 0 Violations
+******* DONE VERIFY ANTENNA ********
+(CPU Time: 0:00:00.7  MEM: 0.000M)
+
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -signoff -pathReports -drvReports -slackReports -numPaths 500 -prefix fft_8_top_signOff -outDir timingReports
+**WARN: (IMPOPT-7250):	Option -signOff for command timeDesign is obsolete and has been replaced by signoffTimeDesign.
+The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use signoffTimeDesign.
+The setDelayCalMode -SIAware true is set. Running Signoff AAE-SI Analysis.
+*** timeDesign #1 [begin] : totSession cpu/real = 0:00:42.7/0:02:15.7 (0.3), mem = 1939.1M
+ Reset EOS DB
+Ignoring AAE DB Resetting ...
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_default_input_delay_mode' has become obsolete. It will be removed in the next release.
+Deleting AAE DB and timing data for delay calculations...
+AAE DB initialization (MEM=1939.05 CPU=0:00:00.0 REAL=0:00:00.0) 
+[17:01:53.165619] Periodic Lic check successful
+[17:01:53.165635] Feature usage summary:
+[17:01:53.165635] Innovus_Impl_System
+[17:01:53.165635] Tempus_Timing_Signoff_XL
+
+This command "timeDesign -signoff -pathReports -drvReports -slackReports ..." required an extra checkout of license tpsxl.
+Additional license(s) checked out: 1 'Tempus_Timing_Signoff_XL' license(s)
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_default_input_delay_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_default_input_delay_mode' has become obsolete. It will be removed in the next release.
+Extraction called for design 'fft_8_top' of instances=55902 and nets=13511 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+Extraction called for design 'fft_8_top' of instances=55902 and nets=13511 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+Starting delay calculation for Setup views
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fft_8_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Extraction called for design 'fft_8_top' of instances=55902 and nets=13511 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1950.66)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1960.2 CPU=0:00:04.9 REAL=0:00:05.0)
+End delay calculation (fullDC). (MEM=1960.2 CPU=0:00:05.1 REAL=0:00:05.0)
+esiiDumpWaveformsThread is successfull 1 
+Save waveform /tmp/innovus_temp_25706_vlsilab03.nitrr.ac.in_vlsilab_A9uzJ6/.AAE_6qFwA6/.AAE_25706/waveform.data in separate thread...
+Finish pthread dumping compressed waveforms.
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1984.2M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 1984.2M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1894.32)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View worst_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1945.54 CPU=0:00:00.2 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1945.54 CPU=0:00:00.2 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:07.2 real=0:00:07.0 totSessionCpu=0:00:50.0 mem=1969.5M)
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fft_8_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Extraction called for design 'fft_8_top' of instances=55902 and nets=13511 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1921.87)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1981.58 CPU=0:00:04.9 REAL=0:00:05.0)
+End delay calculation (fullDC). (MEM=1981.58 CPU=0:00:05.1 REAL=0:00:06.0)
+esiiDumpWaveformsThread is successfull 1 
+Save waveform /tmp/innovus_temp_25706_vlsilab03.nitrr.ac.in_vlsilab_A9uzJ6/.AAE_6qFwA6/.AAE_25706/waveform.data in separate thread...
+Finish pthread dumping compressed waveforms.
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2005.6M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 2005.6M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1937.58)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View worst_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1988.8 CPU=0:00:00.2 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=1988.8 CPU=0:00:00.2 REAL=0:00:01.0)
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fft_8_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Extraction called for design 'fft_8_top' of instances=55902 and nets=13511 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1986.8)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2005.86 CPU=0:00:04.9 REAL=0:00:05.0)
+End delay calculation (fullDC). (MEM=2005.86 CPU=0:00:05.1 REAL=0:00:06.0)
+esiiDumpWaveformsThread is successfull 1 
+Save waveform /tmp/innovus_temp_25706_vlsilab03.nitrr.ac.in_vlsilab_A9uzJ6/.AAE_6qFwA6/.AAE_25706/waveform.data in separate thread...
+Finish pthread dumping compressed waveforms.
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2029.9M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 2029.9M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1959.85)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View worst_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2012.08 CPU=0:00:00.2 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2012.08 CPU=0:00:00.2 REAL=0:00:00.0)
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2029.31 CPU=0:00:04.9 REAL=0:00:04.0)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View worst_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2034.51 CPU=0:00:00.2 REAL=0:00:00.0)
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2048.21 CPU=0:00:04.9 REAL=0:00:05.0)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View worst_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2057.41 CPU=0:00:00.2 REAL=0:00:00.0)
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2078.65 CPU=0:00:04.9 REAL=0:00:05.0)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View worst_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2083.86 CPU=0:00:00.2 REAL=0:00:01.0)
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2098.56 CPU=0:00:04.9 REAL=0:00:05.0)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View worst_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2106.76 CPU=0:00:00.2 REAL=0:00:00.0)
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2225.41 CPU=0:00:04.9 REAL=0:00:05.0)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View worst_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View worst_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2230.61 CPU=0:00:00.2 REAL=0:00:00.0)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Setup views included:
+ worst_case 
+
++--------------------+---------+---------+---------+
+|     Setup mode     |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  3.893  |  7.227  |  3.893  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  1644   |  1644   |   512   |
++--------------------+---------+---------+---------+
+
++----------------+-------------------------------+------------------+
+|                |              Real             |       Total      |
+|    DRVs        +------------------+------------+------------------|
+|                |  Nr nets(terms)  | Worst Vio  |  Nr nets(terms)  |
++----------------+------------------+------------+------------------+
+|   max_cap      |      0 (0)       |   0.000    |      0 (0)       |
+|   max_tran     |      0 (0)       |   0.000    |      0 (0)       |
+|   max_fanout   |      0 (0)       |     0      |      0 (0)       |
+|   max_length   |      0 (0)       |     0      |      0 (0)       |
++----------------+------------------+------------+------------------+
+
+Density: 27.131%
+       (100.000% with Fillers)
+Total number of glitch violations: 0
+------------------------------------------------------------------
+Total CPU time: 58.3 sec
+Total Real time: 61.0 sec
+Total Memory Usage: 2106.074219 Mbytes
+Reset AAE Options
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_default_input_delay_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_default_input_delay_mode' has become obsolete. It will be removed in the next release.
+*** timeDesign #1 [finish] : cpu/real = 0:00:58.4/0:01:00.8 (1.0), totSession cpu/real = 0:01:41.1/0:03:16.5 (0.5), mem = 2088.3M
+<CMD> redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+<CMD> timeDesign -signoff -hold -pathReports -slackReports -numPaths 500 -prefix fft_8_top_signOff -outDir timingReports
+**WARN: (IMPOPT-7250):	Option -signOff for command timeDesign is obsolete and has been replaced by signoffTimeDesign.
+The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, update your script to use signoffTimeDesign.
+The setDelayCalMode -SIAware true is set. Running Signoff AAE-SI Analysis.
+*** timeDesign #2 [begin] : totSession cpu/real = 0:01:44.0/0:03:38.6 (0.5), mem = 2088.3M
+ Reset EOS DB
+Ignoring AAE DB Resetting ...
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_default_input_delay_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_default_input_delay_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_default_input_delay_mode' has become obsolete. It will be removed in the next release.
+Extraction called for design 'fft_8_top' of instances=55902 and nets=13511 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+Extraction called for design 'fft_8_top' of instances=55902 and nets=13511 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+Starting delay calculation for Hold views
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 1 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fft_8_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Extraction called for design 'fft_8_top' of instances=55902 and nets=13511 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=2091.03)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+*** Calculating scaling factor for min_timing libraries using the default operating condition of each library.
+ Report initialization with DMWrite ... (0, Best)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2127.98 CPU=0:00:04.9 REAL=0:00:05.0)
+End delay calculation (fullDC). (MEM=2127.98 CPU=0:00:05.1 REAL=0:00:05.0)
+esiiDumpWaveformsThread is successfull 1 
+Save waveform /tmp/innovus_temp_25706_vlsilab03.nitrr.ac.in_vlsilab_A9uzJ6/.AAE_6qFwA6/.AAE_25706/waveform.data in separate thread...
+Finish pthread dumping compressed waveforms.
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2160.0M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 2160.0M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=2105.1)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View best_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View best_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2146.28 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2146.28 CPU=0:00:00.1 REAL=0:00:00.0)
+*** Done Building Timing Graph (cpu=0:00:06.7 real=0:00:07.0 totSessionCpu=0:01:51 mem=2170.3M)
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 1 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fft_8_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Extraction called for design 'fft_8_top' of instances=55902 and nets=13511 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=2146.28)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2167.34 CPU=0:00:04.9 REAL=0:00:04.0)
+End delay calculation (fullDC). (MEM=2167.34 CPU=0:00:05.1 REAL=0:00:05.0)
+esiiDumpWaveformsThread is successfull 1 
+Save waveform /tmp/innovus_temp_25706_vlsilab03.nitrr.ac.in_vlsilab_A9uzJ6/.AAE_6qFwA6/.AAE_25706/waveform.data in separate thread...
+Finish pthread dumping compressed waveforms.
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2191.3M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 2191.3M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=2119.34)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View best_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View best_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2161.52 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2161.52 CPU=0:00:00.1 REAL=0:00:00.0)
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 1 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fft_8_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: No SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+Extraction called for design 'fft_8_top' of instances=55902 and nets=13511 using extraction engine 'postRoute' at effort level 'signoff' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=2159.52)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2181.58 CPU=0:00:04.9 REAL=0:00:05.0)
+End delay calculation (fullDC). (MEM=2181.58 CPU=0:00:05.1 REAL=0:00:05.0)
+esiiDumpWaveformsThread is successfull 1 
+Save waveform /tmp/innovus_temp_25706_vlsilab03.nitrr.ac.in_vlsilab_A9uzJ6/.AAE_6qFwA6/.AAE_25706/waveform.data in separate thread...
+Finish pthread dumping compressed waveforms.
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2205.6M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 2205.6M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=2143.58)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View best_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View best_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2182.74 CPU=0:00:00.1 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2182.74 CPU=0:00:00.1 REAL=0:00:00.0)
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2200.44 CPU=0:00:04.9 REAL=0:00:05.0)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View best_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View best_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2198.61 CPU=0:00:00.1 REAL=0:00:00.0)
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2214.31 CPU=0:00:04.8 REAL=0:00:05.0)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View best_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View best_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2219.48 CPU=0:00:00.1 REAL=0:00:00.0)
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2237.18 CPU=0:00:04.9 REAL=0:00:05.0)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View best_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View best_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2235.34 CPU=0:00:00.1 REAL=0:00:00.0)
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+**ERROR: (IMPEXT-3491):	Extraction failed because Quantus QRC technology file(s) are not specified for all the active RC corners in the MMMC set up. This is mandatory for medium or high or signoff effortLevel postRoute extraction. If all files are unavailable, set 'setExtractRCMode -effortLevel low'. Ideally specify the technology file for each RC corner using the -qx_tech_file option of the create_rc_corner or update_rc_corner commands.
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMWrite ... (0, Worst)
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2257.57 CPU=0:00:04.8 REAL=0:00:04.0)
+**WARN: (IMPESI-2017):	There is no coupling capacitance found in the design. Use 'setDelayCalMode -siAware false' to perform base delay analysis. SI analysis requires the parasitics database to contain coupling capacitance. To perform SI analysis, use 'setExtractRCMode -coupled true' prior to extraction or load a SPEF with coupling capacitance and re-run. If the design is small and does not have any coupling, this message can be ignored.
+ Report initialization with DMUpdate ... (1, Worst)
+Glitch Analysis: View best_case -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View best_case -- Total Number of Nets Analyzed = 0. 
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+Total number of fetched objects 13486
+AAE_INFO-618: Total number of nets in the design is 13511,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2254.8 CPU=0:00:00.1 REAL=0:00:00.0)
+
+------------------------------------------------------------------
+          timeDesign Summary
+------------------------------------------------------------------
+
+Hold views included:
+ best_case 
+
++--------------------+---------+---------+---------+
+|     Hold mode      |   all   | reg2reg | default |
++--------------------+---------+---------+---------+
+|           WNS (ns):|  0.586  |  0.586  |  1.152  |
+|           TNS (ns):|  0.000  |  0.000  |  0.000  |
+|    Violating Paths:|    0    |    0    |    0    |
+|          All Paths:|  1644   |  1644   |   512   |
++--------------------+---------+---------+---------+
+
+Density: 27.131%
+       (100.000% with Fillers)
+------------------------------------------------------------------
+Total CPU time: 49.61 sec
+Total Real time: 49.0 sec
+Total Memory Usage: 2180.070312 Mbytes
+Reset AAE Options
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_default_input_delay_mode' has become obsolete. It will be removed in the next release.
+**WARN: (GLOBAL-100):	Global 'timing_enable_backward_compatible_default_input_delay_mode' has become obsolete. It will be removed in the next release.
+*** timeDesign #2 [finish] : cpu/real = 0:00:49.6/0:00:49.6 (1.0), totSession cpu/real = 0:02:33.6/0:04:28.2 (0.6), mem = 2181.5M
+<CMD> checkDesign -io -netlist -physicalLibrary -powerGround -tieHilo -timingLibrary -spef -floorplan -place -outdir checkDesign
+Creating directory checkDesign.
+**WARN: (IMPREPO-205):	There are 22 Cells with missing PG PIN.
+Begin checking placement ... (start mem=2193.8M, init mem=2193.8M)
+*info: Recommended don't use cell = 0           
+*info: Placed = 55537          (Fixed = 17)
+*info: Unplaced = 0           
+Placement Density:100.00%(1412768/1412768)
+Placement Density (including fixed std cells):100.00%(1412768/1412768)
+Finished checkPlace (total: cpu=0:00:00.8, real=0:00:01.0; vio checks: cpu=0:00:00.7, real=0:00:01.0; mem=2193.8M)
+############################################################################
+# Innovus Netlist Design Rule Check
+# Tue Apr 28 17:05:37 2026
+############################################################################
+Design: fft_8_top
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 55537
+Total Block Cell Number      (cells) : 0
+Total I/O Pad Cell Number    (cells) : 365
+Total Standard Cell Area     ( um^2) : 1412768.00
+Total Block Cell Area        ( um^2) : 0.00
+Total I/O Pad Cell Area      ( um^2) : 1689840.00
+
+------ Design Statistics:
+
+Number of Instances            : 55902
+Number of Non-uniquified Insts : 55885
+Number of Nets                 : 13511
+Average number of Pins per Net : 2.94
+Maximum number of Pins in Net  : 101
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 36
+Number of Input Ports          : 20
+Number of Output Ports         : 16
+Number of Bidirectional Ports  : 0
+Number of Power/Ground Ports   : 0
+Number of Floating Ports                     *: 0
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 0
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 443
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+Number of Input/InOut Floating Pins            : 0
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+**WARN: (IMPREPO-216):	There are 443 Instances with input pins tied together.
+Number of nets with tri-state drivers          : 0
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 23
+Number of High Fanout nets (>50)               : 33
+**WARN: (IMPREPO-227):	There are 33 High Fanout nets (>50).
+Checking routing tracks.....
+Checking other grids.....
+Checking routing blockage.....
+Checking components.....
+Checking constraints (guide/region/fence).....
+Checking groups.....
+Checking Ptn Core Box.....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+ Design check done.
+Report saved in file checkDesign/fft_8_top.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPREPO-227          1  There are %d High Fanout nets (>50).     
+WARNING   IMPREPO-205          1  There are %d Cells with missing PG PIN.  
+WARNING   IMPREPO-216          1  There are %d Instances with input pins t...
+*** Message Summary: 3 warning(s), 0 error(s)
+
+<CMD> zoomBox -191.84700 363.55800 2470.48800 1905.24700
+<CMD> zoomBox 75.42600 543.90200 2338.41200 1854.33800
+<CMD> zoomBox 494.20500 826.73800 2129.21200 1773.52800
+<CMD> zoomBox 654.95300 938.08100 2044.70900 1742.85300
+<CMD> zoomBox 791.58800 1032.72300 1972.88100 1716.77900
+<CMD> zoomBox 907.72700 1113.16900 1911.82700 1694.61700
+<CMD> zoomBox 1161.68200 1289.07400 1778.32500 1646.15600
+<CMD> zoomBox 1317.60200 1397.06100 1696.29800 1616.35400
+<CMD> zoomBox 1355.03900 1421.99600 1676.93100 1608.39500
+<CMD> zoomBox 1436.89900 1476.51900 1634.58200 1590.99200
+<CMD> zoomBox 1472.75600 1500.36900 1615.58200 1583.07600
+<CMD> zoomBox 1498.42400 1516.59200 1601.61600 1576.34800
+<CMD> zoomBox 1517.00300 1529.17900 1591.56000 1572.35300
+<CMD> zoomBox 1524.25900 1534.09500 1587.63300 1570.79300
+<CMD> zoomBox 1530.42600 1538.67900 1584.29500 1569.87300
+<CMD> zoomBox 1539.98100 1546.17500 1578.90200 1568.71300
+<CMD> zoomBox 1546.87700 1551.58400 1574.99900 1567.86900
+<CMD> zoomBox 1549.53200 1553.57000 1573.43600 1567.41200
+<CMD> zoomBox 1553.79100 1556.66000 1571.06300 1566.66200
+<CMD> zoomBox 1555.45600 1557.86600 1570.13800 1566.36800
+<CMD> zoomBox 1558.10200 1559.77400 1568.71000 1565.91700
+<CMD> zoomBox 1553.77500 1556.61500 1571.05100 1566.61900
+<CMD> zoomBox 1546.73100 1551.47000 1574.86400 1567.76100
+<CMD> zoomBox 1535.26000 1543.09200 1581.07200 1569.62100
+<CMD> zoomBox 1517.96600 1529.90100 1592.56600 1573.10000
+<CMD> zoomBox 1506.76100 1516.21500 1610.01200 1576.00500
+<CMD> zoomBox 1487.83700 1486.25300 1655.96800 1583.61300
+<CMD> zoomBox 1480.96800 1472.46200 1678.76900 1587.00300
+<CMD> zoomBox 1464.29400 1437.10200 1738.06700 1595.63700
+<CMD> zoomBox 1441.21400 1388.16200 1820.14000 1607.58800
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage -1 0
+<CMD> panPage 1 0
+<CMD> panPage 1 0
+<CMD> fit
+<CMD> zoomBox -525.73000 33.36300 2136.60500 1575.05200
+<CMD> zoomBox -177.31700 164.32600 1457.69100 1111.11700
+<CMD> zoomBox 36.65200 244.75300 1040.75300 826.20200
+<CMD> zoomBox 168.05500 294.14500 784.70200 651.22900
+<CMD> zoomBox 284.39300 337.87400 558.00400 496.31500
+<CMD> zoomBox 310.14200 347.55300 507.82700 462.02700
+<CMD> zoomBox 328.74600 354.54600 471.57400 437.25400
+<CMD> zoomBox 341.30600 359.98000 444.49900 419.73600
+<CMD> zoomBox 353.92400 365.43900 417.29800 402.13700
+<CMD> zoomBox 359.56000 368.05000 405.34900 394.56500
+<CMD> zoomBox 363.68400 369.95800 396.76700 389.11600
+<CMD> zoomBox 366.75100 371.34800 390.65600 385.19100
+<CMD> zoomBox 368.02200 371.79000 388.34200 383.55700
+<CMD> zoomBox 370.77900 372.74700 383.25900 379.97400
+<CMD> zoomBox 371.90500 373.21300 380.92300 378.43500
+<CMD> zoomBox 372.72700 373.63500 379.24400 377.40900
+<CMD> zoomBox 373.32000 373.96000 378.02900 376.68700
+<CMD> zoomBox 373.74400 374.20100 377.14600 376.17100
+<CMD> zoomBox 374.05000 374.37500 376.50900 375.79900
+<CMD> zoomBox 374.36300 374.55700 375.87400 375.43200
+<CMD> zoomBox 374.55500 374.67200 375.48500 375.21100
+<CMD> zoomBox 373.73500 374.38200 375.51700 375.41400
+<CMD> zoomBox 373.12100 374.14900 375.58700 375.57700
+<CMD> panPage 1 0
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> zoomBox 373.50800 515.24500 376.40900 516.92500
+<CMD> zoomBox 373.09200 515.07500 376.50600 517.05200
+<CMD> zoomBox 372.60300 514.87500 376.62000 517.20100
+<CMD> zoomBox 372.02700 514.64000 376.75400 517.37700
+<CMD> zoomBox 371.35000 514.36300 376.91200 517.58400
+<CMD> zoomBox 370.55400 514.03800 377.09700 517.82700
+<CMD> zoomBox 369.61700 513.65500 377.31500 518.11300
+<CMD> zoomBox 368.45000 513.17800 377.50800 518.42300
+<CMD> zoomBox 367.07800 512.61600 377.73500 518.78700
+<CMD> zoomBox 363.56500 511.17800 378.31600 519.72000
+<CMD> zoomBox 365.48700 511.94000 378.02600 519.20100
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 -1
+<CMD> panPage 0 -1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> panPage 0 1
+<CMD> zoomBox 358.64100 565.85400 379.05800 577.67700
+<CMD> zoomBox 347.49400 561.43300 380.74000 580.68500
+<CMD> zoomBox 329.26700 554.22300 383.40300 585.57200
+<CMD> zoomBox 298.89200 542.19600 387.04300 593.24200
+<CMD> zoomBox 248.46600 521.38000 392.00600 604.50000
+<CMD> zoomBox 84.19100 453.31000 407.69800 640.64400
+<CMD> zoomBox -101.35700 376.42500 425.42200 681.46900
+<CMD> zoomBox -403.49000 251.23200 454.28200 747.94500
+<CMD> zoomBox -541.66300 193.97900 467.48000 778.34700
+<CMD> zoomBox -287.39000 244.66500 441.71500 666.87100
+<CMD> zoomBox -32.43900 295.08000 415.32400 554.36800
+<CMD> zoomBox 119.82700 324.30300 394.81100 483.53900
+<CMD> zoomBox 287.50000 357.39300 375.65500 408.44100
+<CMD> zoomBox 310.13200 361.51600 373.82500 398.39900
+<CMD> panPage 1 0
+<CMD> zoomBox 341.85900 364.68700 387.87800 391.33500
+<CMD> zoomBox 351.70300 367.46600 384.95300 386.72000
+<CMD> zoomBox 358.79400 369.53000 382.81700 383.44100
+<CMD> zoomBox 348.31900 365.69800 387.43800 388.35100
+<CMD> zoomBox 359.14800 369.66700 383.17400 383.58000
+<CMD> zoomBox 361.66300 370.55500 382.08700 382.38200
+<CMD> zoomBox 365.42900 371.68700 380.18500 380.23200
+<CMD> zoomBox 368.02800 372.47700 378.69000 378.65100
+<CMD> zoomBox 369.93100 373.05700 377.63500 377.51800
+<CMD> zoomBox 370.68600 373.34400 377.23400 377.13600
+<CMD> zoomBox 366.82000 371.79000 379.36600 379.05500
+<CMD> zoomBox 356.68100 367.71300 384.95600 384.08600
+<CMD> zoomBox 326.57900 355.61000 401.55000 399.02400
+<CMD> zoomBox 246.76600 323.52100 445.55100 438.63200
+<CMD> zoomBox -525.96400 12.84100 871.55900 822.11000
+<CMD> zoomBox -2013.72300 -585.31600 1691.76900 1560.43800
+<CMD> zoomBox -5008.46100 -1789.35900 3342.78600 3046.63100
+<CMD> zoomBox -8391.01000 -3149.32000 5207.60400 4725.28300
+<CMD> fit
+rc_best rc_worst
+<CMD> reset_parasitics
+Performing RC Extraction ...
+<CMD> extractRC
+Extraction called for design 'fft_8_top' of instances=55902 and nets=13511 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PostRoute (effortLevel low) RC Extraction called for design fft_8_top.
+RC Extraction called in multi-corner(2) mode.
+Process corner(s) are loaded.
+ Corner: rc_worst
+ Corner: rc_best
+extractDetailRC Option : -outfile /tmp/innovus_temp_25706_vlsilab03.nitrr.ac.in_vlsilab_A9uzJ6/fft_8_top_25706_v2bmG0.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 2205.7M)
+Extracted 10.0009% (CPU Time= 0:00:00.3  MEM= 2281.3M)
+Extracted 20.001% (CPU Time= 0:00:00.4  MEM= 2281.3M)
+Extracted 30.0011% (CPU Time= 0:00:00.5  MEM= 2281.3M)
+Extracted 40.0013% (CPU Time= 0:00:00.5  MEM= 2281.3M)
+Extracted 50.0014% (CPU Time= 0:00:00.7  MEM= 2281.3M)
+Extracted 60.0009% (CPU Time= 0:00:00.8  MEM= 2285.3M)
+Extracted 70.001% (CPU Time= 0:00:00.9  MEM= 2285.3M)
+Extracted 80.0011% (CPU Time= 0:00:01.0  MEM= 2285.3M)
+Extracted 90.0013% (CPU Time= 0:00:01.1  MEM= 2285.3M)
+Extracted 100% (CPU Time= 0:00:01.3  MEM= 2285.3M)
+Number of Extracted Resistors     : 226383
+Number of Extracted Ground Cap.   : 236769
+Number of Extracted Coupling Cap. : 419340
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+ Corner: rc_worst
+ Corner: rc_best
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 2269.3M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:02.0  Real Time: 0:00:02.0  MEM: 2269.273M)
+<CMD> rcOut -spef fft_8_top.spef -rc_corner rc_best
+RC Out has the following PVT Info:
+   RC:rc_best, Operating temperature -40 C
+Dumping Spef file.....
+Printing D_NET...
+RC Out from RCDB Completed (CPU Time= 0:00:01.1  MEM= 2269.3M)
+<CMD> streamOut FFT.gds -mapFile ../streamout_innovous_6M1L.map -libName DesignLib -units 1000 -mode ALL
+Parse flat map file...
+Writing GDSII file ...
+	****** db unit per micron = 1000 ******
+	****** output gds2 file unit per micron = 1000 ******
+	****** unit scaling factor = 1 ******
+Output for instance
+Output for bump
+Output for physical terminals
+Output for logical terminals
+Output for regular nets
+Output for special nets and metal fills
+Output for via structure generation total number 58
+Statistics for GDS generated (version 3)
+----------------------------------------
+Stream Out Layer Mapping Information:
+GDS Layer Number          GDS Layer Name
+----------------------------------------
+    40                                M1
+    50                             TOP_M
+    49                             TOP_V
+    48                                M5
+    44                                M3
+    42                                M2
+    46                                M4
+    43                                V3
+    47                                V5
+    41                                V2
+    45                                V4
+
+
+Stream Out Information Processed for GDS version 3:
+Units: 1000 DBU
+
+Object                             Count
+----------------------------------------
+Instances                          55902
+
+Ports/Pins                             0
+
+Nets                              142205
+    metal layer M1                  9866
+    metal layer M2                 78020
+    metal layer M3                 35994
+    metal layer M4                 14839
+    metal layer M5                  3247
+    metal layer TOP_M                239
+
+    Via Instances                  83321
+
+Special Nets                         703
+    metal layer M1                   656
+    metal layer M2                     5
+    metal layer M4                     6
+    metal layer M5                     8
+    metal layer TOP_M                 28
+
+    Via Instances                   2176
+
+Metal Fills                            0
+
+    Via Instances                      0
+
+Metal FillOPCs                         0
+
+    Via Instances                      0
+
+Metal FillDRCs                         0
+
+    Via Instances                      0
+
+Text                                  36
+    metal layer M2                    36
+
+
+Blockages                              0
+
+
+Custom Text                            0
+
+
+Custom Box                             0
+
+Trim Metal                             0
+
+######Streamout is finished!
+<CMD> saveNetlist -includePowerGround ./signoff/fft_signoff_withPG.v
+** NOTE: Created directory path './signoff' for file './signoff/fft_signoff_withPG.v'.
+Writing Netlist "./signoff/fft_signoff_withPG.v" ...
+Pwr name (VDD_CORE).
+Pwr name (VDDO_CORE).
+Gnd name (VSS_CORE).
+Gnd name (VSSO_CORE).
+2 Pwr names and 2 Gnd names.
+<CMD> saveNetlist ./signoff/fft_signoff_withoutPG.v
+Writing Netlist "./signoff/fft_signoff_withoutPG.v" ...
+<CMD> write_sdf -version 2.1 -edges noedge -recrem split setuphold merge_when_paired ./signoff/fft_postroute_with_pad_delay.sdf
+
+Usage: write_sdf [-help] <file_name> [-abstracted_model] [-adjust_setuphold_for_zero_hold_slack] [-base_delay] [-celltiming {all none nochecks}] [-collapse_internal_pins] [-condelse] [-delimiter <char>]
+                 [-delta_delay] [-edges {edged library noedge check_edge}] [-exclude_cells <cell_list>] [-exclude_cells_keep_io_nets] [-exclude_cells_keep_top_level_nets] [-exclude_disabled_arcs]
+                 [-exclude_disabled_modes] [-exclude_whatif_arcs] [-filter] [-ideal_clock_network] [-interconn {all none noport noinport nooutport}] [-map_file {file1 file2 ...}] [-max_view <viewName>]
+                 [-merge_arcs] [-min_period_edges {posedge negedge both none}] [-min_view <viewName>] [-no_condition] [-no_derate] [-no_escape] [-no_variation] [-nonegchecks] [-precision <non_neg_integer>]
+                 [-process <string>] [-recompute_delay_calc] [-recompute_parallel_arcs] [-recrem {merge_always split merge_when_paired}] [-remashold] [-resort_values_min_to_max] [-scale <float>]
+                 [-setuphold {merge_always split merge_when_paired}] [-splitrecrem] [-splitsetuphold] [-target_application {sta verilog}] [-temperature <string>] [-timingcheck {order}]
+                 [-transform_out_to_out_arcs] [-typ_view <viewName>] [-version {2.1 3.0}] [-view <viewName>] [-voltage <string>]
+
+**ERROR: (IMPTCM-48):	"merge_when_paired" is not a legal option for command "write_sdf". Either the current option or an option prior to it is not specified correctly.
+
+<CMD> write_sdf -version 2.1 \
+          -edges noedge \
+          -recrem split \
+          -setuphold split \
+          ./signoff/fft_postroute_with_pad_delay.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_delay_calc'. This setting is recommended for generating SDF for functional  simulation applications.
+AAE_INFO: opIsDesignInPostRouteState() is 1
+AAE_INFO: resetNetProps viewIdx 0 
+AAE_INFO: resetNetProps viewIdx 1 
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: fft_8_top
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB 
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=2279.07)
+*** Calculating scaling factor for max_timing libraries using the default operating condition of each library.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+AAE_INFO-618: Total number of nets in the design is 13511,  99.8 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2301.81 CPU=0:00:11.5 REAL=0:00:12.0)
+End delay calculation (fullDC). (MEM=2301.81 CPU=0:00:12.0 REAL=0:00:12.0)
+esiiDumpWaveformsThread is successfull 1 
+Save waveform /tmp/innovus_temp_25706_vlsilab03.nitrr.ac.in_vlsilab_A9uzJ6/.AAE_6qFwA6/.AAE_25706/waveform.data in separate thread...
+Finish pthread dumping compressed waveforms.
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 2333.8M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.1, REAL = 0:00:00.0, MEM = 2333.8M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=2273.02)
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+AAE_INFO-618: Total number of nets in the design is 13511,  0.3 percent of the nets selected for SI analysis
+AAE_INFO-618: Total number of nets in the design is 13511,  0.1 percent of the nets selected for SI analysis
+End delay calculation. (MEM=2330.85 CPU=0:00:00.3 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=2330.85 CPU=0:00:00.3 REAL=0:00:00.0)
+<CMD> saveDesign fft_8_top_signoff.enc
+The in-memory database contained RC information but was not saved. To save 
+the RC information, use saveDesign's -rc option. Note: Saving RC information can be quite large, 
+so it should only be saved when it is really desired.
+#% Begin save design ... (date=04/28 17:28:53, mem=1916.4M)
+% Begin Save ccopt configuration ... (date=04/28 17:28:53, mem=1916.4M)
+% End Save ccopt configuration ... (date=04/28 17:28:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1917.1M, current mem=1917.1M)
+% Begin Save netlist data ... (date=04/28 17:28:53, mem=1917.1M)
+Writing Binary DB to fft_8_top_signoff.enc.dat/fft_8_top.v.bin in single-threaded mode...
+% End Save netlist data ... (date=04/28 17:28:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1918.1M, current mem=1918.1M)
+Saving symbol-table file ...
+Saving congestion map file fft_8_top_signoff.enc.dat/fft_8_top.route.congmap.gz ...
+% Begin Save AAE data ... (date=04/28 17:28:53, mem=1918.8M)
+Saving AAE Data ...
+% End Save AAE data ... (date=04/28 17:28:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=1918.8M, current mem=1918.8M)
+Saving preference file fft_8_top_signoff.enc.dat/gui.pref.tcl ...
+Saving mode setting ...
+Saving global file ...
+% Begin Save floorplan data ... (date=04/28 17:28:53, mem=1919.9M)
+Saving floorplan file ...
+Convert 0 swires and 0 svias from compressed groups
+% End Save floorplan data ... (date=04/28 17:28:54, total cpu=0:00:00.1, real=0:00:01.0, peak res=1920.9M, current mem=1920.9M)
+Saving PG file fft_8_top_signoff.enc.dat/fft_8_top.pg.gz, version#2, (Created by Innovus v21.15-s110_1 on Tue Apr 28 17:28:54 2026)
+*** Completed savePGFile (cpu=0:00:00.0 real=0:00:00.0 mem=2234.4M) ***
+Saving Drc markers ...
+... 2 markers are saved ...
+... 0 geometry drc markers are saved ...
+... 0 antenna drc markers are saved ...
+% Begin Save placement data ... (date=04/28 17:28:54, mem=1921.0M)
+** Saving stdCellPlacement_binary (version# 2) ...
+Save Adaptive View Pruning View Names to Binary file
+% End Save placement data ... (date=04/28 17:28:54, total cpu=0:00:00.0, real=0:00:00.0, peak res=1921.2M, current mem=1921.2M)
+% Begin Save routing data ... (date=04/28 17:28:54, mem=1921.2M)
+Saving route file ...
+*** Completed saveRoute (cpu=0:00:00.1 real=0:00:00.0 mem=2234.4M) ***
+% End Save routing data ... (date=04/28 17:28:54, total cpu=0:00:00.1, real=0:00:00.0, peak res=1921.4M, current mem=1921.4M)
+Saving property file fft_8_top_signoff.enc.dat/fft_8_top.prop
+*** Completed saveProperty (cpu=0:00:00.0 real=0:00:00.0 mem=2237.4M) ***
+#Saving pin access data to file fft_8_top_signoff.enc.dat/fft_8_top.apa ...
+% Begin Save power constraints data ... (date=04/28 17:28:55, mem=1922.2M)
+% End Save power constraints data ... (date=04/28 17:28:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1922.2M, current mem=1922.2M)
+rc_best rc_worst
+Generated self-contained design fft_8_top_signoff.enc.dat
+#% End save design ... (date=04/28 17:28:55, total cpu=0:00:00.9, real=0:00:02.0, peak res=1923.8M, current mem=1923.8M)
+*** Message Summary: 0 warning(s), 0 error(s)
+
+
+--------------------------------------------------------------------------------
+Exiting Innovus on Tue Apr 28 17:31:37 2026
+  Total CPU time:     0:06:59
+  Total real time:    0:32:04
+  Peak memory (main): 1986.54MB
+
+
+*** Memory Usage v#1 (Current mem = 2293.961M, initial mem = 483.883M) ***
+*** Message Summary: 1566 warning(s), 20 error(s)
+
+--- Ending "Innovus" (totcpu=0:06:52, real=0:32:03, mem=2294.0M) ---
