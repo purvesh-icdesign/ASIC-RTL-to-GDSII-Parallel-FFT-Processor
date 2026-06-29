@@ -1,3 +1,5 @@
+<img width="1920" height="1200" alt="Full Chip" src="https://github.com/user-attachments/assets/7069e4f1-97c2-4352-8cfb-94ee3bb4458f" />
+
 # ASIC-RTL-to-GDSII-Parallel-FFT-Processor
 High-throughput 8-point Radix-2 FFT processor with twin parallel FFT engines, FIFO buffering, FSM control, and complete RTL-to-GDSII ASIC implementation.
 
