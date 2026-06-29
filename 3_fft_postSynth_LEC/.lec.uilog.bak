@@ -1,0 +1,1064 @@
+#Version: 20.20-s200 (01-Feb-2021) (64 bit executable)
+     tk::MbMotion .v_menu.ltx up 767 119
+     tk::MbLeave .v_menu.ltx
+     tk::MbEnter .v_menu.tool
+     tk::MbMotion .v_menu.tool up 756 122
+     tk::MbLeave .v_menu.tool
+         if { [ .icon.hierCmp cget -state ] == "normal" } {
+            .icon.hierCmp configure -relief groove
+        }
+    
+     tk::ButtonEnter .icon.hierCmp
+ .icon.hierCmp configure -relief flat 
+     tk::ButtonLeave .icon.hierCmp
+         if { [ .icon.rrcmgr cget -state ] == "normal" } {
+            .icon.rrcmgr configure -relief groove
+        }
+    
+     tk::ButtonEnter .icon.rrcmgr
+ .icon.rrcmgr configure -relief flat 
+     tk::ButtonLeave .icon.rrcmgr
+         if { [ .icon.modelmgr cget -state ] == "normal" } {
+            .icon.modelmgr configure -relief groove
+        }
+    
+     tk::ButtonEnter .icon.modelmgr
+ .icon.modelmgr configure -relief flat 
+     tk::ButtonLeave .icon.modelmgr
+     tk::MbEnter .v_menu.read
+     tk::MbMotion .v_menu.read up 589 120
+     tk::MbMotion .v_menu.read up 588 119
+     if {$tk::Priv(inMenubutton) ne ""} {
+	tk::MbPost $tk::Priv(inMenubutton) 588 119
+    }
+     tk::MbButtonUp .v_menu.read
+     tk::MbMotion .v_menu.read up 588 122
+     tk::MbLeave .v_menu.read
+     set tk::Priv(window) .v_menu.read.menu
+    if {[.v_menu.read.menu cget -type] eq "tearoff"} {
+	if {"NotifyNormal" ne "NotifyUngrab"} {
+	    if {[tk windowingsystem] eq "x11"} {
+		tk_menuSetFocus .v_menu.read.menu
+	    }
+	}
+    }
+    tk::MenuMotion .v_menu.read.menu 17 2 16
+#Gui Step(2)===>(Menu).v_menu.read.menu <Button> {(menu-item) "Do Dofile"}
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 2:  (Menu) <Button>\
+ (menu-item) "Do Dofile"} .v_menu.read.menu } 
+set x [guiGetMenuX .v_menu.read.menu 1];set y [guiGetMenuY .v_menu.read.menu 1 ] 
+     tk::MenuMotion .v_menu.read.menu $x $y 0
+     tk::MenuButtonDown .v_menu.read.menu
+    tk::MenuInvoke .v_menu.read.menu 1
+         if { [ .icon.rulechk cget -state ] == "normal" } {
+            .icon.rulechk configure -relief groove
+        }
+    
+     tk::ButtonEnter .icon.rulechk
+ .icon.rulechk configure -relief flat 
+     tk::ButtonLeave .icon.rulechk
+callback Gui_hlist_leave .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist
+_tixRecordFlags <1> % 9842 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 16 774248028 ?? 90 129 ?? ?? 0 ?? ?? 0x000159 00000000 4 .fselect.fsbox.lf.pane.2.filelist.listbox 1019 531; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+set x [guiGetListBoxEntryX .fselect.fsbox.lf.pane.2.filelist.listbox 6];set y [guiGetListBoxEntryY .fselect.fsbox.lf.pane.2.filelist.listbox 6] 
+     if {[winfo exists .fselect.fsbox.lf.pane.2.filelist.listbox]} {
+	tk::ListboxBeginSelect .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index  @$x,$y] 1
+    }
+#Gui Step(5)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <Button-1> rtl2intermediate.lec.log
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 5:  (Listbox) <Button-1>\
+ rtl2intermediate.lec.log} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+_tixRecordFlags <1> % 9842 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 16 774248028 ?? 90 129 ?? ?? 0 ?? ?? 0x000159 00000000 4 .fselect.fsbox.lf.pane.2.filelist.listbox 1019 531; 
+	if {[string is true -strict [.fselect.fsbox.lf.pane.2.filelist.listbox cget -takefocus]]} {
+	    focus .fselect.fsbox.lf.pane.2.filelist.listbox
+	}
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+focus .fselect.fsbox.lf.pane.2.filelist.listbox
+_tixRecordFlags <B1-Motion> % 9917 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248124 ?? 90 129 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1019 531; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 90
+    set tk::Priv(y) 129
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @90,129]
+_tixRecordFlags <B1-Motion> % 9917 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248124 ?? 90 129 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1019 531; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 9934 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248132 ?? 92 129 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1021 531; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 92
+    set tk::Priv(y) 129
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @92,129]
+_tixRecordFlags <B1-Motion> % 9934 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248132 ?? 92 129 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1021 531; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 95
+    set tk::Priv(y) 130
+    tk::ListboxAutoScan .fselect.fsbox.lf.pane.2.filelist.listbox
+_tixRecordFlags <B1-Motion> % 9951 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248139 ?? 95 130 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1024 532; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 95
+    set tk::Priv(y) 130
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @95,130]
+_tixRecordFlags <B1-Motion> % 9951 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248139 ?? 95 130 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1024 532; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 9970 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248148 ?? 97 130 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1026 532; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 97
+    set tk::Priv(y) 130
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @97,130]
+_tixRecordFlags <B1-Motion> % 9970 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248148 ?? 97 130 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1026 532; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 9988 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248155 ?? 99 130 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1028 532; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 99
+    set tk::Priv(y) 130
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @99,130]
+_tixRecordFlags <B1-Motion> % 9988 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248155 ?? 99 130 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1028 532; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10006 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248163 ?? 102 131 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1031 533; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 102
+    set tk::Priv(y) 131
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @102,131]
+_tixRecordFlags <B1-Motion> % 10006 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248163 ?? 102 131 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1031 533; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10024 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248171 ?? 104 132 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1033 534; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 104
+    set tk::Priv(y) 132
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @104,132]
+_tixRecordFlags <B1-Motion> % 10024 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248171 ?? 104 132 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1033 534; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10042 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248180 ?? 106 132 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1035 534; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 106
+    set tk::Priv(y) 132
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @106,132]
+_tixRecordFlags <B1-Motion> % 10042 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248180 ?? 106 132 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1035 534; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10060 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248188 ?? 109 132 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1038 534; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 109
+    set tk::Priv(y) 132
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @109,132]
+_tixRecordFlags <B1-Motion> % 10060 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248188 ?? 109 132 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1038 534; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10078 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248196 ?? 111 133 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1040 535; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 111
+    set tk::Priv(y) 133
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @111,133]
+_tixRecordFlags <B1-Motion> % 10078 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248196 ?? 111 133 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1040 535; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10096 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248203 ?? 114 133 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1043 535; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 114
+    set tk::Priv(y) 133
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @114,133]
+_tixRecordFlags <B1-Motion> % 10096 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248203 ?? 114 133 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1043 535; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10114 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248212 ?? 115 133 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1044 535; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 115
+    set tk::Priv(y) 133
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @115,133]
+_tixRecordFlags <B1-Motion> % 10114 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248212 ?? 115 133 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1044 535; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10132 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248220 ?? 116 133 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1045 535; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 116
+    set tk::Priv(y) 133
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @116,133]
+_tixRecordFlags <B1-Motion> % 10132 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248220 ?? 116 133 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1045 535; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10150 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248228 ?? 117 133 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1046 535; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 117
+    set tk::Priv(y) 133
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @117,133]
+_tixRecordFlags <B1-Motion> % 10150 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248228 ?? 117 133 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1046 535; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10168 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248235 ?? 120 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1049 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 120
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @120,134]
+_tixRecordFlags <B1-Motion> % 10168 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248235 ?? 120 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1049 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10186 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248252 ?? 122 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1051 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 122
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @122,134]
+_tixRecordFlags <B1-Motion> % 10186 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248252 ?? 122 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1051 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10204 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248276 ?? 124 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1053 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 124
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @124,134]
+_tixRecordFlags <B1-Motion> % 10204 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248276 ?? 124 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1053 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10222 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248307 ?? 125 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1054 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 125
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @125,134]
+_tixRecordFlags <B1-Motion> % 10222 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248307 ?? 125 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1054 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10240 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248324 ?? 126 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1055 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 126
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @126,134]
+_tixRecordFlags <B1-Motion> % 10240 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248324 ?? 126 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1055 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10258 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248339 ?? 127 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1056 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 127
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @127,134]
+_tixRecordFlags <B1-Motion> % 10258 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248339 ?? 127 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1056 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10276 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248355 ?? 129 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1058 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 129
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @129,134]
+_tixRecordFlags <B1-Motion> % 10276 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248355 ?? 129 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1058 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10294 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248371 ?? 130 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1059 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 130
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @130,134]
+_tixRecordFlags <B1-Motion> % 10294 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248371 ?? 130 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1059 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10312 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248380 ?? 131 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1060 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 131
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @131,134]
+_tixRecordFlags <B1-Motion> % 10312 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248380 ?? 131 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1060 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10330 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248396 ?? 132 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1061 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 132
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @132,134]
+_tixRecordFlags <B1-Motion> % 10330 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248396 ?? 132 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1061 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10348 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248404 ?? 134 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1063 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 134
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @134,134]
+_tixRecordFlags <B1-Motion> % 10348 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248404 ?? 134 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1063 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10366 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248411 ?? 135 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1064 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 135
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @135,134]
+_tixRecordFlags <B1-Motion> % 10366 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248411 ?? 135 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1064 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10384 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248428 ?? 136 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1065 536; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 136
+    set tk::Priv(y) 134
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @136,134]
+_tixRecordFlags <B1-Motion> % 10384 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248428 ?? 136 134 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1065 536; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+_tixRecordFlags <B1-Motion> % 10402 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248444 ?? 138 135 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1067 537; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+     set tk::Priv(x) 138
+    set tk::Priv(y) 135
+    tk::ListboxMotion .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index @138,135]
+_tixRecordFlags <B1-Motion> % 10402 ?? ?? ?? ?? ?? ?? ?? ?? ?? ?? 272 774248444 ?? 138 135 ?? ?? 0 ?? ?? 0x000159 00000000 6 .fselect.fsbox.lf.pane.2.filelist.listbox 1067 537; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+#Gui Step(6)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <ButtonRelease-1> rtl2intermediate.lec.log
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 6:  (Listbox) <ButtonRelease-1>\
+ rtl2intermediate.lec.log} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+_tixRecordFlags <ButtonRelease-1> % 10420 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 272 774248523 ?? 138 135 ?? ?? 0 ?? ?? 0x000159 00000000 5 .fselect.fsbox.lf.pane.2.filelist.listbox 1067 537; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+#Gui Step(7)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <ButtonRelease-1> rtl2intermediate.lec.log
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 7:  (Listbox) <ButtonRelease-1>\
+ rtl2intermediate.lec.log} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+     tk::CancelRepeat
+    .fselect.fsbox.lf.pane.2.filelist.listbox activate @138,135
+#Gui Step(8)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <ButtonRelease-1> rtl2intermediate.lec.log
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 8:  (Listbox) <ButtonRelease-1>\
+ rtl2intermediate.lec.log} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+_tixRecordFlags <ButtonRelease-1> % 10420 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 272 774248523 ?? 138 135 ?? ?? 0 ?? ?? 0x000159 00000000 5 .fselect.fsbox.lf.pane.2.filelist.listbox 1067 537; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+     if {$tk_strictMotif} {
+	set tk::Priv(activeBg) [.fselect.fsbox.lf.pane.2.filelist.hsb cget -activebackground]
+	.fselect.fsbox.lf.pane.2.filelist.hsb configure -activebackground [.fselect.fsbox.lf.pane.2.filelist.hsb cget -background]
+    }
+    .fselect.fsbox.lf.pane.2.filelist.hsb activate [.fselect.fsbox.lf.pane.2.filelist.hsb identify 138 5]
+     ::tk::ScrollToPos .fselect.fsbox.lf.pane.2.filelist.hsb 0.0
+     ::tk::ScrollToPos .fselect.fsbox.lf.pane.2.filelist.hsb 0.13114754098360656
+     if {$tk_strictMotif && [info exists tk::Priv(activeBg)]} {
+	.fselect.fsbox.lf.pane.2.filelist.hsb configure -activebackground $tk::Priv(activeBg)
+    }
+    .fselect.fsbox.lf.pane.2.filelist.hsb activate {}
+     if {$tk_strictMotif} {
+	set tk::Priv(activeBg) [.fselect.fsbox.lf.pane.2.filelist.hsb cget -activebackground]
+	.fselect.fsbox.lf.pane.2.filelist.hsb configure -activebackground [.fselect.fsbox.lf.pane.2.filelist.hsb cget -background]
+    }
+    .fselect.fsbox.lf.pane.2.filelist.hsb activate [.fselect.fsbox.lf.pane.2.filelist.hsb identify 106 0]
+     ::tk::ScrollToPos .fselect.fsbox.lf.pane.2.filelist.hsb 0.13114754098360656
+     # Prevents <Leave> binding from being invoked.
+     ::tk::ScrollToPos .fselect.fsbox.lf.pane.2.filelist.hsb 0.0
+     if {$tk_strictMotif && [info exists tk::Priv(activeBg)]} {
+	.fselect.fsbox.lf.pane.2.filelist.hsb configure -activebackground $tk::Priv(activeBg)
+    }
+    .fselect.fsbox.lf.pane.2.filelist.hsb activate {}
+     if {$tk_strictMotif} {
+	set tk::Priv(activeBg) [.fselect.fsbox.lf.pane.2.filelist.hsb cget -activebackground]
+	.fselect.fsbox.lf.pane.2.filelist.hsb configure -activebackground [.fselect.fsbox.lf.pane.2.filelist.hsb cget -background]
+    }
+    .fselect.fsbox.lf.pane.2.filelist.hsb activate [.fselect.fsbox.lf.pane.2.filelist.hsb identify 0 5]
+     if {$tk_strictMotif && [info exists tk::Priv(activeBg)]} {
+	.fselect.fsbox.lf.pane.2.filelist.hsb configure -activebackground $tk::Priv(activeBg)
+    }
+    .fselect.fsbox.lf.pane.2.filelist.hsb activate {}
+#Gui Step(13)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <Button-1> rtl2intermediate.lec.log
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 13:  (Listbox) <Button-1>\
+ rtl2intermediate.lec.log} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+_tixRecordFlags <1> % 11418 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 16 774253476 ?? 59 105 ?? ?? 0 ?? ?? 0x000159 00000000 4 .fselect.fsbox.lf.pane.2.filelist.listbox 988 507; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+#Gui Step(14)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <Button-1> rtl2intermediate.lec.log
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 14:  (Listbox) <Button-1>\
+ rtl2intermediate.lec.log} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+set x [guiGetListBoxEntryX .fselect.fsbox.lf.pane.2.filelist.listbox 5];set y [guiGetListBoxEntryY .fselect.fsbox.lf.pane.2.filelist.listbox 5] 
+     if {[winfo exists .fselect.fsbox.lf.pane.2.filelist.listbox]} {
+	tk::ListboxBeginSelect .fselect.fsbox.lf.pane.2.filelist.listbox [.fselect.fsbox.lf.pane.2.filelist.listbox index  @$x,$y] 1
+    }
+#Gui Step(15)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <Button-1> rtl2intermediate.lec.do
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 15:  (Listbox) <Button-1>\
+ rtl2intermediate.lec.do} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+_tixRecordFlags <1> % 11418 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 16 774253476 ?? 59 105 ?? ?? 0 ?? ?? 0x000159 00000000 4 .fselect.fsbox.lf.pane.2.filelist.listbox 988 507; 
+	if {[string is true -strict [.fselect.fsbox.lf.pane.2.filelist.listbox cget -takefocus]]} {
+	    focus .fselect.fsbox.lf.pane.2.filelist.listbox
+	}
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+#Gui Step(16)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <ButtonRelease-1> rtl2intermediate.lec.do
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 16:  (Listbox) <ButtonRelease-1>\
+ rtl2intermediate.lec.do} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+_tixRecordFlags <ButtonRelease-1> % 11475 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 272 774253564 ?? 59 105 ?? ?? 0 ?? ?? 0x000159 00000000 5 .fselect.fsbox.lf.pane.2.filelist.listbox 988 507; 
+	if {[set [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox](-state)] eq "disabled"} {
+	    break
+	}
+    ; _tixDeleteFlags;
+#Gui Step(17)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <ButtonRelease-1> rtl2intermediate.lec.do
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 17:  (Listbox) <ButtonRelease-1>\
+ rtl2intermediate.lec.do} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+     tk::CancelRepeat
+    .fselect.fsbox.lf.pane.2.filelist.listbox activate @59,105
+#Gui Step(18)===>(Listbox).fselect.fsbox.lf.pane.2.filelist.listbox <ButtonRelease-1> rtl2intermediate.lec.do
+global guiReplayPause
+if {[info exists guiReplayPause] && $guiReplayPause == 1} { guiReplayBreakMsg {Step 18:  (Listbox) <ButtonRelease-1>\
+ rtl2intermediate.lec.do} .fselect.fsbox.lf.pane.2.filelist.listbox } 
+_tixRecordFlags <ButtonRelease-1> % 11475 ?? 1 ?? ?? ?? ?? ?? ?? ?? ?? 272 774253564 ?? 59 105 ?? ?? 0 ?? ?? 0x000159 00000000 5 .fselect.fsbox.lf.pane.2.filelist.listbox 988 507; 
+	tixScrolledListBox:Browse [tixGetMegaWidget .fselect.fsbox.lf.pane.2.filelist.listbox]
+    ; _tixDeleteFlags;
+ .fselect.fsbox.bf.cancel instate !disabled {.fselect.fsbox.bf.cancel state active} 
+ .fselect.fsbox.bf.cancel state !active 
+ .fselect.fsbox.bf.ok instate !disabled {.fselect.fsbox.bf.ok state active} 
+ .fselect.fsbox.bf.ok instate !disabled { ttk::clickToFocus .fselect.fsbox.bf.ok; .fselect.fsbox.bf.ok state pressed } 
+ .fselect.fsbox.bf.ok instate pressed { .fselect.fsbox.bf.ok state !pressed; .fselect.fsbox.bf.ok instate !disabled { .fselect.fsbox.bf.ok invoke } } 
+ .fselect.fsbox.bf.ok state !active 
+ guiWinConfig .fselect 480 255 720 309 
+ guiWinConfig .b.frame.lab 168 21 1 1 
+callback Gui_hlist_leave .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist
+ guiWinConfig .b.frame.lab 216 21 1 1 
+ .icon.setup instate !disabled {.icon.setup state active} 
+ .icon.setup state !active 
+         if { [ .v_menu.logo cget -state ] == "normal" } {
+            .v_menu.logo configure -relief groove
+        }
+    
+     tk::ButtonEnter .v_menu.logo
+ .v_menu.logo configure -relief flat 
+     tk::ButtonLeave .v_menu.logo
+ guiWinConfig .b.frame.lab 168 21 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .b.frame.lab 172 21 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1 368 250 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb 368 13 0 250 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist 366 248 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1 368 263 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist 366 261 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1 368 250 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb 368 13 0 250 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist 366 248 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1 368 250 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb 368 13 0 250 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist 366 248 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1 368 263 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist 366 261 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1 368 250 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb 368 13 0 250 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist 366 248 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1 368 263 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist 366 261 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1 368 250 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb 368 13 0 250 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist 366 248 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1 368 263 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist 366 261 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1 368 250 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb 368 13 0 250 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist 366 248 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1 368 263 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist 366 261 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1 368 250 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb 368 13 0 250 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist 366 248 1 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe 764 353 0 0 
+tixVStack:ClientGeomProc .a.pane.f1.middle.nb -configure .a.pane.f1.middle.nb.nbframe.hier
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.hier 748 298 8 47 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1 766 355 0 0 
+ guiWinConfig .a.pane.f2 766 286 0 355 
+ guiWinConfig .a.pane.f3 766 40 0 641 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_r.list.hsb 1 13 0 1 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.listbox 1 1 0 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.vsb 13 1 1 0 
+ guiWinConfig .a.pane.f1.middle.nb.nbframe.design.sw1.bkd_g.list.hsb 1 13 0 1 
+ guiWinConfig .b.frame.lab 140 21 1 1 
+ guiWinConfig .b.frame.lab 130 21 1 1 
+ guiWinConfig .b.frame.lab 146 21 1 1 
+ guiWinConfig .b.frame.lab 136 21 1 1 
+ guiWinConfig .b.frame.lab 91 21 1 1 
+ guiWinConfig .b.frame.lab 309 21 1 1 
+ guiWinConfig .b.frame.lab 104 21 1 1 
+ guiWinConfig .b.frame.lab 148 21 1 1 
+ guiWinConfig .b.frame.lab 219 21 1 1 
+ guiWinConfig .b.met 203 23 559 4 
+ guiWinConfig .b.frame 547 23 4 4 
+ guiWinConfig .b.met.canvas 201 21 1 1 
+ guiWinConfig .b.frame.lab 140 21 1 1 
+ guiWinConfig .b.frame.lab 130 21 1 1 
+ guiWinConfig .b.frame.lab 146 21 1 1 
+ guiWinConfig .b.frame.lab 136 21 1 1 
+ guiWinConfig .b.frame.lab 148 21 1 1 
+ guiWinConfig .b.frame.lab 219 21 1 1 
+ guiWinConfig .b.frame.lab 91 21 1 1 
+ guiWinConfig .b.frame.lab 317 21 1 1 
+ guiWinConfig .b.frame.lab 333 21 1 1 
+ guiWinConfig .b.frame.lab 104 21 1 1 
+ guiWinConfig .b.frame.lab 155 21 1 1 
+ guiWinConfig .b.frame.lab 91 21 1 1 
+ guiWinConfig .b.frame.lab 317 21 1 1 
+ guiWinConfig .b.frame.lab 333 21 1 1 
+ guiWinConfig .b.frame.lab 104 21 1 1 
+ guiWinConfig .b.frame.lab 91 21 1 1 
+ guiWinConfig .b.frame.lab 317 21 1 1 
+ guiWinConfig .b.frame.lab 333 21 1 1 
+ guiWinConfig .b.frame.lab 104 21 1 1 
+ guiWinConfig .b.frame.lab 148 21 1 1 
+ guiWinConfig .b.frame.lab 215 21 1 1 
+ guiWinConfig .b.frame.lab 91 21 1 1 
+ guiWinConfig .b.frame.lab 317 21 1 1 
+ guiWinConfig .b.frame.lab 325 21 1 1 
+ guiWinConfig .b.frame.lab 104 21 1 1 
+ guiWinConfig .b.frame.lab 91 21 1 1 
+ guiWinConfig .b.frame.lab 317 21 1 1 
+ guiWinConfig .b.frame.lab 333 21 1 1 
+ guiWinConfig .b.frame.lab 317 21 1 1 
+ guiWinConfig .b.frame.lab 325 21 1 1 
+ guiWinConfig .b.frame.lab 104 21 1 1 
+ guiWinConfig .a.pane.f3.command.text.text.promt1 60 19 1 -1 
+ guiWinConfig .a.pane.f3.command.text.text.promt2 44 19 1 18 
+callback Gui_hlist_leave .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist
+callback Gui_hlist_leave .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.f1.hlist
+     if {$tk_strictMotif} {
+	set tk::Priv(activeBg) [.a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb cget -activebackground]
+	.a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb configure -activebackground [.a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb cget -background]
+    }
+    .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb activate [.a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb identify 262 11]
+     if {$tk_strictMotif && [info exists tk::Priv(activeBg)]} {
+	.a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb configure -activebackground $tk::Priv(activeBg)
+    }
+    .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb activate {}
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+     if {$tk_strictMotif} {
+	set tk::Priv(activeBg) [.a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb cget -activebackground]
+	.a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb configure -activebackground [.a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb cget -background]
+    }
+    .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb activate [.a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb identify 3 4]
+     if {$tk_strictMotif && [info exists tk::Priv(activeBg)]} {
+	.a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb configure -activebackground $tk::Priv(activeBg)
+    }
+    .a.pane.f1.middle.nb.nbframe.hier.revised.fm.tree.hsb activate {}
+callback Gui_hlist_leave .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist
+     if {$tk_strictMotif} {
+	set tk::Priv(activeBg) [.a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb cget -activebackground]
+	.a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb configure -activebackground [.a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb cget -background]
+    }
+    .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb activate [.a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb identify 221 8]
+     if {$tk_strictMotif && [info exists tk::Priv(activeBg)]} {
+	.a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb configure -activebackground $tk::Priv(activeBg)
+    }
+    .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb activate {}
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+callback Gui_hlist_leave .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist
+         if { [ .icon.hierCmp cget -state ] == "normal" } {
+            .icon.hierCmp configure -relief groove
+        }
+    
+     tk::ButtonEnter .icon.hierCmp
+ .icon.hierCmp configure -relief flat 
+     tk::ButtonLeave .icon.hierCmp
+callback Gui_hlist_leave .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.f1.hlist
+     if {$tk_strictMotif} {
+	set tk::Priv(activeBg) [.a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb cget -activebackground]
+	.a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb configure -activebackground [.a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb cget -background]
+    }
+    .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb activate [.a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb identify 247 11]
+     if {$tk_strictMotif && [info exists tk::Priv(activeBg)]} {
+	.a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb configure -activebackground $tk::Priv(activeBg)
+    }
+    .a.pane.f1.middle.nb.nbframe.hier.golden.fm.tree.hsb activate {}
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll 50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll 50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
+ 	if {!$tk_strictMotif} {
+	    .a.pane.f2.mesg.text.text yview scroll -50 pixels
+	}
+    
