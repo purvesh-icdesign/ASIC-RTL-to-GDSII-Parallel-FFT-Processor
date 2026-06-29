@@ -1,0 +1,49 @@
+ncvlog(64): 15.20-s086: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+  	input logic 	clk,
+  	            	  |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,6|18): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+  	input logic 	clk,
+  	            	  |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,6|18): Expecting a ',' or ')' [12.3.2(IEEE)].
+	input logic 	rst,
+	            	  |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,7|16): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+	input logic 	rst,
+	            	  |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,7|16): Expecting a ',' or ')' [12.3.2(IEEE)].
+	input logic		start_fft,
+	           		        |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,8|22): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+	input logic		start_fft,
+	           		        |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,8|22): Expecting a ',' or ')' [12.3.2(IEEE)].
+	input logic signed [DATA_WIDTH-1:0] inp_real[0:7],
+	                 |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,9|18): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+	input logic signed [DATA_WIDTH-1:0] inp_real[0:7],
+	                 |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,9|18): Expecting a ',' or ')' [12.3.2(IEEE)].
+	input logic signed [DATA_WIDTH-1:0] inp_real[0:7],
+	                              |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,9|31): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+	input logic signed [DATA_WIDTH-1:0] inp_real[0:7],
+	                              |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,9|31): Expecting a ',' or ')' [12.3.2(IEEE)].
+	input logic signed [DATA_WIDTH-1:0] inp_real[0:7],
+	                                            |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,9|45): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+	input logic signed [DATA_WIDTH-1:0] inp_real[0:7],
+	                                            |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,9|45): Expecting a ',' or ')' [12.3.2(IEEE)].
+    	input logic signed [DATA_WIDTH-1:0] inp_imag[0:7],
+    	                 |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,10|22): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+    	input logic signed [DATA_WIDTH-1:0] inp_imag[0:7],
+    	                 |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,10|22): Expecting a ',' or ')' [12.3.2(IEEE)].
+    	input logic signed [DATA_WIDTH-1:0] inp_imag[0:7],
+    	                              |
+ncvlog: *E,EXPCORP (/home/vlsilab/Music/FFT/FFT/1_src/FFT.sv,10|35): Expecting a ',' or ')' [A.1.4(IEEE-2001)].
+ncvlog: *F,MAXERR: maximum error count reached (15).
+ncvlog: Memory Usage - 21.4M program + 27.6M data = 49.0M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 100.0% cpu)

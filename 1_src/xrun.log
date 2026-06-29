@@ -1,0 +1,199 @@
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.09-s003: Started on Apr 20, 2026 at 16:55:08 IST
+xrun
+	Top.sv
+	Top_TB.sv
+	-access +rwc
+	-gui
+file: Top.sv
+	module worklib.fifo:sv
+		errors: 0, warnings: 0
+	module worklib.fft_8:sv
+		errors: 0, warnings: 0
+	module worklib.fft_fifo_top:sv
+		errors: 0, warnings: 0
+file: Top_TB.sv
+	module worklib.fft_fifo_top_tb:sv
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		fft_fifo_top_tb
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.fft_8:sv <0x263bb1f2>
+			streams:   3, words: 27403
+		worklib.fifo:sv <0x04cd6eca>
+			streams:   8, words:  3362
+		worklib.fft_fifo_top_tb:sv <0x64086306>
+			streams:   9, words: 15032
+		worklib.fft_fifo_top:sv <0x4d297dc5>
+			streams:  42, words: 24376
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  6       4
+		Registers:               96      70
+		Scalar wires:            25       -
+		Vectored wires:          22       -
+		Always blocks:            8       6
+		Initial blocks:           1       1
+		Cont. assignments:       10       9
+		Pseudo assignments:      27      27
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.fft_fifo_top_tb:sv
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /home/install/cadence/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm fft_fifo_top_tb.clk fft_fifo_top_tb.data_in_external fft_fifo_top_tb.data_out_external fft_fifo_top_tb.read_en_external fft_fifo_top_tb.rst fft_fifo_top_tb.write_en_external
+Created probe 1
+xcelium> run
+==== FFT FIFO Top Testbench ====
+Test bench val bef: 1.00
+Test bench val bef: 2.00
+Test bench val bef: 3.00
+Test bench val bef: 4.00
+Entered LOAD
+FIFO to FFT 256.000000
+Test bench val bef: 5.00
+Entered LOAD
+FIFO to FFT 512.000000
+Test bench val bef: 6.00
+Entered LOAD
+FIFO to FFT 768.000000
+Test bench val bef: 7.00
+Entered LOAD
+FIFO to FFT 1024.000000
+Test bench val bef: 8.00
+Entered LOAD
+FIFO to FFT 1280.000000
+Entered LOAD
+FIFO to FFT 1536.000000
+Entered LOAD
+FIFO to FFT 1792.000000
+Entered LOAD
+FIFO to FFT 2048.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Test bench val bef: 2.00
+Entered LOAD
+FIFO to FFT 0.000000
+Test bench val bef: 3.00
+Entered LOAD
+FIFO to FFT 0.000000
+Test bench val bef: 4.00
+Entered LOAD
+FIFO to FFT 0.000000
+Test bench val bef: 5.00
+Entered LOAD
+FIFO to FFT 512.000000
+Test bench val bef: 6.00
+Entered LOAD
+FIFO to FFT 768.000000
+Test bench val bef: 7.00
+Entered LOAD
+FIFO to FFT 1024.000000
+Test bench val bef: 8.00
+Entered LOAD
+FIFO to FFT 1280.000000
+Test bench val bef: 9.00
+Entered LOAD
+FIFO to FFT 1536.000000
+Entered LOAD
+FIFO to FFT 1792.000000
+Entered LOAD
+FIFO to FFT 2048.000000
+Entered LOAD
+FIFO to FFT 2304.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Waiting for FFT to complete and output to become available...
+Entered LOAD
+FIFO to FFT 0.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Entered LOAD
+FIFO to FFT 0.000000
+Stage 1[0] = 2048
+Stage 1[1] = -1024
+Stage 1[2] = 3072
+Stage 1[3] = -1024
+Stage 1[4] = 2560
+Stage 1[5] = -1024
+Stage 1[6] = 3584
+Stage 1[7] = -1024
+Execution done!
+Stage 1[0] = 1536
+Stage 1[1] = -1024
+Stage 1[2] = 2560
+Stage 1[3] = -1024
+Stage 1[4] = 2048
+Stage 1[5] = -1024
+Stage 1[6] = 3072
+Stage 1[7] = -1024
+Execution done!
+==== FFT Output from Output FIFO ====
+FFT Output [0] = 36.00
+FFT Output [1] = -4.00
+FFT Output [2] = -4.00
+FFT Output [3] = -4.00
+FFT Output [4] = -4.00
+FFT Output [5] = -4.00
+FFT Output [6] = -4.00
+FFT Output [7] = -4.00
+FFT Output [8] = 0.00
+FFT Output [9] = 9.66
+FFT Output [10] = 4.00
+FFT Output [11] = 1.66
+FFT Output [12] = 0.00
+FFT Output [13] = -1.66
+FFT Output [14] = -4.00
+FFT Output [15] = -9.66
+FFT Output [16] = 44.00
+FFT Output [17] = -4.00
+FFT Output [18] = -4.00
+FFT Output [19] = -4.00
+FFT Output [20] = -4.00
+FFT Output [21] = -4.00
+FFT Output [22] = -4.00
+FFT Output [23] = -4.00
+FFT Output [24] = 0.00
+FFT Output [25] = 9.66
+FFT Output [26] = 4.00
+FFT Output [27] = 1.66
+FFT Output [28] = 0.00
+FFT Output [29] = -1.66
+FFT Output [30] = -4.00
+FFT Output [31] = -9.66
+==== Test Completed ====
+Simulation complete via $finish(1) at time 1269 NS + 0
+./Top_TB.sv:97         #30 $finish;
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	22.09-s003: Exiting on Apr 20, 2026 at 17:15:02 IST  (total: 00:19:54)
